@@ -16,7 +16,7 @@
       <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
         <i class="material-icons">code</i>
       </button> -->
-      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
               <!-- บนแนวนอน -->
               <header class="mdl-layout__header">
                 <div class="mdl-layout-icon"></div>
@@ -28,9 +28,20 @@
                     <a class="mdl-navigation__link" href="">Link</a>
                     <a class="mdl-navigation__link" href="">Link</a>
                     <a class="mdl-navigation__link" href="">Link</a> -->
-                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                    <!-- <button class="mdl-button mdl-js-button mdl-button--icon">
                       <i class="material-icons">search</i>
-                    </button>
+                    </button> -->
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                                mdl-textfield--floating-label mdl-textfield--align-right">
+                      <label class="mdl-button mdl-js-button mdl-button--icon"
+                             for="waterfall-exp">
+                        <i class="material-icons">search</i>
+                      </label>
+                      <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" name="sample"
+                               id="waterfall-exp">
+                      </div>
+                    </div>
                     <button id="demo-menu-lower-right"
                             class="mdl-button mdl-js-button mdl-button--icon">
                       <i class="material-icons">more_vert</i>
@@ -49,6 +60,10 @@
                     </ul>
                   </nav>
                 </div>
+                <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                  <a href="#favourite-tab" class="mdl-layout__tab is-active">Favorites</a>
+                  <a href="#allcontact-tab" class="mdl-layout__tab">All Contacts</a>
+                </div>
               </header>
               <!-- ด้านซ้าย -->
               <!-- <div class="mdl-layout__drawer">
@@ -63,16 +78,26 @@
               </div> -->
               <!-- tabกลาง -->
               <main class="mdl-layout__content">
-                <div class="mdl-tabs mdl-js-tabs">
-                  <div class="mdl-tabs__tab-bar">
-                    <!-- <a href="#color-panel" class="mdl-tabs__tab is-active">Colors</a>
+                <!-- <div class="mdl-tabs mdl-js-tabs">
+                  <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                    <a href="#color-panel" class="mdl-tabs__tab is-active">Colors</a>
                     <a href="#name-panel" class="mdl-tabs__tab">Names</a>
-                    <a href="#gender-panel" class="mdl-tabs__tab">Gender</a> -->
-                    <a href="" class="mdl-tabs__tab is-active">Favorites</a>
-                    <a href="" class="mdl-tabs__tab">All Contacts</a>
+                    <a href="#gender-panel" class="mdl-tabs__tab">Gender</a>
+                    <a href="" class="mdl-layout__tab is-active">Favorites</a>
+                    <a href="" class="mdl-layout__tab">All Contacts</a>
                   </div>
-                </div>
+                </div> -->
+                <!-- <div class="mdl-layout__drawer">
+                  <span class="mdl-layout-title">Contact</span>
+                </div> -->
 
+                <section class="mdl-layout__tab-panel is-active" id="favourite-tab">
+                  <div class="page-content"><!-- Your content goes here --></div>
+                </section>
+                <section class="mdl-layout__tab-panel" id="allcontact-tab">
+                  <div class="page-content"><!-- Your content goes here --></div>
+                </section>
+              </main>
 
       </div>
 
