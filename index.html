@@ -5,9 +5,17 @@
 
         <title>Learning MDL</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.light_blue-blue.min.css" />
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-light_blue.min.css" />
         <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+        <style>
+          .fab-btn{
+            float: right;
+            margin: 25px;
+          }
 
+
+
+        </style>
     </head>
     <body>
       <!-- <h1 class="title">Basic Material Design Button</h1>
@@ -16,12 +24,16 @@
       <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
         <i class="material-icons">code</i>
       </button> -->
+
+
       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
               <!-- บนแนวนอน -->
+
               <header class="mdl-layout__header">
                 <div class="mdl-layout-icon"></div>
+
                 <div class="mdl-layout__header-row">
-                  <span class="mdl-layout-title">Content</span>
+                  <span class="mdl-layout-title">Contacts</span>
                   <div class="mdl-layout-spacer"></div>
                   <nav class="mdl-navigation">
                     <!-- <a class="mdl-navigation__link" href="">Link</a>
@@ -61,8 +73,8 @@
                   </nav>
                 </div>
                 <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-                  <a href="#favourite-tab" class="mdl-layout__tab is-active">Favorites</a>
-                  <a href="#allcontact-tab" class="mdl-layout__tab">All Contacts</a>
+                  <a href="#favourite-tab" class="mdl-layout__tab is-active"><b>Favorites</b></a>
+                  <a href="#allcontact-tab" class="mdl-layout__tab"><b>All Contacts</b></a>
                 </div>
               </header>
               <!-- ด้านซ้าย -->
@@ -91,13 +103,20 @@
                   <span class="mdl-layout-title">Contact</span>
                 </div> -->
 
-                <section class="mdl-layout__tab-panel is-active" id="favourite-tab">
-                  <div class="page-content"><!-- Your content goes here --></div>
+                <section class="mdl-layout__tab-panel is-active mdl-color-text--grey" id="favourite-tab">
+                  <center><h6>No favourites.</h6></center>
                 </section>
                 <section class="mdl-layout__tab-panel" id="allcontact-tab">
                   <div class="page-content"><!-- Your content goes here --></div>
                 </section>
+
+
               </main>
+              <div class="">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--primary mdl-js-ripple-effect mdl-shadow--6dp fab-btn">
+                  <i class="material-icons">person_add</i>
+                </button>
+              </div>
 
       </div>
 
