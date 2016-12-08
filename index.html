@@ -9,8 +9,17 @@
         <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
         <style>
           .fab-btn{
-            float: right;
-            margin: 25px;
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+          }
+
+          .head-title{
+            padding-top: 15px;
           }
 
 
@@ -32,7 +41,7 @@
               <header class="mdl-layout__header">
                 <div class="mdl-layout-icon"></div>
 
-                <div class="mdl-layout__header-row">
+                <div class="mdl-layout__header-row head-title">
                   <span class="mdl-layout-title">Contacts</span>
                   <div class="mdl-layout-spacer"></div>
                   <nav class="mdl-navigation">
@@ -108,18 +117,15 @@
                 </section>
                 <section class="mdl-layout__tab-panel" id="allcontact-tab">
                   <div class="page-content"><!-- Your content goes here --></div>
+
                 </section>
-
-
               </main>
-              <div class="">
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--primary mdl-js-ripple-effect mdl-shadow--6dp fab-btn">
-                  <i class="material-icons">person_add</i>
-                </button>
-              </div>
 
       </div>
 
+      <a class="mdl-button mdl-js-button mdl-button--fab mdl-button--primary mdl-js-ripple-effect mdl-shadow--6dp fab-btn" href="addnewcontact.html">
+        <i class="material-icons">person_add</i>
+      </a>
 
     </body>
 </html>
