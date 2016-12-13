@@ -10,6 +10,7 @@
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     <style>
       .layout-container{
+        position: relative;
         background: url(ic_person_white_48dp.png);
         background-color: #7C4DFF;
         background-repeat: no-repeat;
@@ -18,18 +19,10 @@
         height: 400px;
       }
 
-      .pos-bottom{
+      .title-name{
         position: absolute;
-
-        bottom: 0;
-
-        margin-bottom: 10px;
-      }
-
-      .add-photo{
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 255px;
+        bottom: 20px;
+        left: 20px;
       }
 
     </style>
@@ -38,8 +31,8 @@
 
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header layout-container ">
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title add-photo">Sutinee</span>
+        <div class="mdl-layout__header-row ">
+          <span class="mdl-layout-title title-name">Sutinee</span>
 
           <div class="mdl-layout-spacer"></div>
 
@@ -58,6 +51,23 @@
 
       <main class="mdl-layout___content">
         <div>123</div>
+
+        <div class="mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title ">
+            <h2 class="mdl-card__title-text ">Welcome</h2>
+          </div>
+
+          <div class="mdl-card__media">
+            <img src="https://placekitten.com/g/400/200"></img>
+          </div>
+
+          <div class="mdl-card__supporting-text">
+            my name is ...................... i am .....helo
+            helooo.........years old. i like.......
+            u are my destiny
+          </div>
+
+        </div>
       </main>
     </div>
 
