@@ -25,6 +25,19 @@
         left: 20px;
       }
 
+      .demo-card-wide.mdl-card {
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 580px;
+      }
+
+      .bottom-border{
+        border-bottom: 1px solid rgba(0,0,0,.13);
+        width: 440px;
+        padding-bottom: 10px;
+      }
+
+
     </style>
   </head>
   <body>
@@ -43,6 +56,13 @@
             <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
               <i class="material-icons">more_vert</i>
             </button>
+
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="demo-menu-lower-right">
+              <li class="mdl-menu__item">Delete</li>
+              <li class="mdl-menu__item">Share</li>
+              <li class="mdl-menu__item">Help & feedback</li>
+            </ul>
           </nav>
         </div>
       </header>
@@ -50,23 +70,21 @@
 
 
       <main class="mdl-layout___content">
-        <div>123</div>
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text mdl-grid">
+            <div class="mdl-cell mdl-cell--1-col">
+              <i class="material-icons">create</i>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col bottom-border">
+              <span class="mdl-color-text--black">Google account</span><br>
+              <span class="mdl-list__item-sub-title bottom-margin">sutinee742@gmail.com</span>
 
-        <div class="mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title ">
-            <h2 class="mdl-card__title-text ">Welcome</h2>
+            </div>
           </div>
-
-          <div class="mdl-card__media">
-            <img src="https://placekitten.com/g/400/200"></img>
-          </div>
-
           <div class="mdl-card__supporting-text">
-            my name is ...................... i am .....helo
-            helooo.........years old. i like.......
-            u are my destiny
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris sagittis pellentesque lacus eleifend lacinia...
           </div>
-
         </div>
       </main>
     </div>
