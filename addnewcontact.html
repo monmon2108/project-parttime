@@ -8,10 +8,74 @@
         <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-light_blue.min.css" />
         <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
         <style>
+          .add-photo{
+            position: absolute;
+            left: 750px;
+            top: 350px;
+
+
+          }
+
+          .left-items {
+            text-align: left;
+            text-transform: capitalize;
+
+          }
+
+          .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+
+          .person-photo{
+            background-color: #546E7A;
+            width: 350px;
+            height: 300px;
+          }
+
+          .center-layout{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+          }
+
+          .left-text{
+            text-align: left;
+          }
+
+          .content-container{
+            height: 2000px;
+          }
+
+
+          .scroll-bar {
+            overflow-y: scroll;
+          }
+
+          .none-underline{
+            text-decoration: none;
+          }
+
+          .demo-list-item {
+            width: 300px;
+          }
+
+          .layout-container{
+            position: relative;
+            background: url(ic_person_white_48dp.png);
+            background-color: #546E7A;
+            background-repeat: no-repeat;
+            background-size: 20%;
+            background-position: center;
+            height: 400px;
+            width: 1000px;
+          }
+
+          .width-txtfield{
+            width: 500px;
+          }
 
 
         </style>
     </head>
+
     <body>
       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
@@ -22,16 +86,113 @@
 
             <span class="mdl-layout-title">Add new contact</span>
             <div class="mdl-layout-spacer"></div>
+
             <button class="mdl-button mdl-js-button mdl-button--icon">
               <i class="material-icons">done</i>
             </button>
           </div>
         </header>
 
-        <main class="mdl-layout___content">
-          <div class="content-container">
+        <main class="mdl-layout___content scroll-bar">
 
-          </div>
+          <section class="section--center center-layout">
+            <a href="#" id="show-photo-dialog" >
+              <div class="layout-container">
+                <div class="add-photo">
+                  <i class="material-icons md-light ">camera_alt</i>
+                </div>
+              </div>
+
+
+            </a>
+
+
+            <dialog class="mdl-dialog">
+              <h5 class="mdl-dialog__title-text">Change photo</h5>
+
+              <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+                <button type="button" class="mdl-button left-items">Take photo</button>
+                <button type="button" class="mdl-button left-items">Choose photo</button>
+              </div>
+
+              <div class="mdl-dialog__actions">
+                <button type="button" class="mdl-button mdl-button--accent close">Cancel</button>
+              </div>
+            </dialog>
+
+            <script>
+              var dialog = document.querySelector('dialog');
+              var showDialogButton = document.querySelector('#show-photo-dialog');
+              if (! dialog.showModal) {
+                dialogPolyfill.registerDialog(dialog);
+              }
+              showDialogButton.addEventListener('click', function() {
+                dialog.showModal();
+              });
+              dialog.querySelector('.close').addEventListener('click', function() {
+                dialog.close();
+              });
+            </script>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing ">
+            <div class="mdl-card">
+
+
+              <div class="mdl-card__supporting-text">
+
+                <ul class="mdl-list">
+                  <li class="mdl-list__item mdl-list__item--two-line">
+                    <span class="mdl-list__item-primary-content">
+                      <span>Google account</span>
+                      <span class="mdl-list__item-sub-title">sutinee742@gmail.com</span>
+                    </span>
+                  </li>
+
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">person</i>
+                      <div class="mdl-textfield mdl-js-textfield">
+                        <input type="text" class="mdl-textfield__input" id="textfield-1"/>
+                        <label class="mdl-textfield__label" for="textfield-1">Name</label>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">phone</i>
+                      <div class="mdl-textfield mdl-js-textfield">
+                        <input type="text" class="mdl-textfield__input" id="textfield-1"/>
+                        <label class="mdl-textfield__label" for="textfield-1">Phone</label>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon">email</i>
+                      <div class="mdl-textfield mdl-js-textfield">
+                        <input type="text" class="mdl-textfield__input" id="textfield-1"/>
+                        <label class="mdl-textfield__label" for="textfield-1">Email</label>
+                      </div>
+                    </span>
+                  </li>
+
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon"></i>
+                      <a href="#" class="none-underline">More Fields</a>
+                    </span>
+                  </li>
+
+
+                </ul>
+
+
+            </div>
+          </section>
+
         </main>
 
       </div>

@@ -22,6 +22,14 @@
             padding-top: 15px;
           }
 
+          .demo-list-item {
+            width: 300px;
+          }
+
+          .scroll-bar {
+            overflow-y: scroll;
+          }
+
 
 
         </style>
@@ -68,6 +76,8 @@
                       <i class="material-icons">more_vert</i>
                     </button>
 
+
+
                     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
                         for="demo-menu-lower-right">
                       <li class="mdl-menu__item">Import/export</li>
@@ -98,7 +108,7 @@
                 </nav>
               </div> -->
               <!-- tabกลาง -->
-              <main class="mdl-layout__content">
+              <main class="mdl-layout__content scroll-bar">
                 <!-- <div class="mdl-tabs mdl-js-tabs">
                   <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
                     <a href="#color-panel" class="mdl-tabs__tab is-active">Colors</a>
@@ -115,10 +125,57 @@
                 <section class="mdl-layout__tab-panel is-active mdl-color-text--grey" id="favourite-tab">
                   <center><h6>No favourites.</h6></center>
                 </section>
+
                 <section class="mdl-layout__tab-panel" id="allcontact-tab">
-                  <div class="page-content"><!-- Your content goes here --></div>
+                  <!-- <ul class="demo-list-two mdl-list">
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <spane>ME</span>
+                      </span>
+
+                      <span class="mdl-list__item-secondary-content">
+
+                        <span class="mdl-chip mdl-chip--contact">
+                            <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">A</span>
+                            <span class="mdl-chip__text">Contact Chip</span>
+                        </span>
+                      </span>
+                    </li>
+
+                  </ul> -->
+
+                  <div class="demo-list-item mdl-list">
+                    <div class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <span class="mdl-color-text--grey">ME</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        <a class="" href="sutineecontact.html">
+                          <span class="mdl-chip mdl-chip--contact mdl-color--white">
+                              <span class="mdl-chip__contact mdl-color--deep-purple-A200 mdl-color-text--white">S</span>
+                              <span class="mdl-chip__text">Sutinee</span>
+                          </span>
+                        </a>
+                      </span>
+                    </div>
+
+                    <div class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <span class="mdl-color-text--grey">M</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        <a class="" href="sutineecontact.html">
+                          <span class="mdl-chip mdl-chip--contact mdl-color--white">
+                              <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">M</span>
+                              <span class="mdl-chip__text">MonMon</span>
+                          </span>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
 
                 </section>
+
               </main>
 
       </div>
