@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Learning MDL</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-light_blue.min.css" />
+        <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+        <link href="https://cdn.muicss.com/mui-0.9.6/css/mui.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.muicss.com/mui-0.9.6/js/mui.min.js"></script>
+        <style>
+
+
+          .width-txtfield{
+            width: 500px;
+          }
+
+          .left-btn{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+          }
+
+          .mui-select{
+            width: 500px;
+          }
+        </style>
+    </head>
+
+    <body>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+          <div class="mdl-layout__header-row">
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon left-btn" href="index.html" title="go back" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+              <i class="material-icons">arrow_back</i>
+            </a>
+
+            <span class="mdl-layout-title">Add new contact</span>
+            <div class="mdl-layout-spacer"></div>
+
+            <button class="mdl-button mdl-js-button mdl-button--icon">
+              <i class="material-icons">done</i>
+            </button>
+          </div>
+        </header>
+
+        <main class="mdl-layout___content scroll-bar">
+
+
+          <div class="page-content">
+
+            <section class="section--center mdl-grid mdl-grid--no-spacing ">
+              <ul class="mdl-list">
+                <li class="mdl-list__item mdl-list__item--two-line">
+                  <span class="mdl-list__item-primary-content">
+                    <span>Google account</span>
+                    <span class="mdl-list__item-sub-title">sutinee742@gmail.com</span>
+                  </span>
+                </li>
+
+
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">person</i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" id="name"/>
+                      <label class="mdl-textfield__label" for="name">Name</label>
+                    </div>
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon"></i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" id="phonetic_name"/>
+                      <label class="mdl-textfield__label" for="phonetic_name">Phonetic name</label>
+                    </div>
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon"></i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" id="nickname"/>
+                      <label class="mdl-textfield__label" for="nickname">Nickname</label>
+                    </div>
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">local_see</i>
+                    <img src="">
+                    <button class="mdl-button mdl-js-button mdl-button--raised ">Button</button>
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">phone</i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" pattern="-?[0-9]*(\.[0-9]+)?" id="phone"/>
+                      <label class="mdl-textfield__label" for="phone">Phone</label>
+                    </div>
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">email</i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" id="email"/>
+                      <label class="mdl-textfield__label" for="email">Email</label>
+                    </div>
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">place</i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" id="address"/>
+                      <label class="mdl-textfield__label" for="address">Address</label>
+                    </div>
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">insert_invitation</i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" id="address"/>
+                      <label class="mdl-textfield__label" for="address">Date</label>
+                    </div>
+
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">domain</i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" id="company"/>
+                      <label class="mdl-textfield__label" for="company">Company</label>
+                    </div>
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon"></i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" id="title"/>
+                      <label class="mdl-textfield__label" for="title">Title</label>
+                    </div>
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">comment</i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" id="note"/>
+                      <label class="mdl-textfield__label" for="note">Notes</label>
+                    </div>
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">message</i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" id="im"/>
+                      <label class="mdl-textfield__label" for="im">IM</label>
+                    </div>
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">dialer_sip</i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" pattern="-?[0-9]*(\.[0-9]+)?" id="sip"/>
+                      <label class="mdl-textfield__label" for="sip">SIP</label>
+                    </div>
+
+                  </span>
+                </li>
+
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">group</i>
+                    <div class="mui-select">
+                      <select>
+                        <option>Friends</option>
+                        <option>Family</option>
+                        <option>Coworkers</option>
+                        <option>Create new group</option>
+                      </select>
+                    </div>
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">public</i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" id="website"/>
+                      <label class="mdl-textfield__label" for="website">Website</label>
+                    </div>
+
+                  </span>
+                </li>
+
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">device_hub</i>
+                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
+                      <input type="text" class="mdl-textfield__input" id="relationship"/>
+                      <label class="mdl-textfield__label" for="relationship">Relationship</label>
+                    </div>
+
+                  </span>
+                </li>
+
+
+            </section>
+          </div>
+
+        </main>
+
+      </div>
+    </body>
