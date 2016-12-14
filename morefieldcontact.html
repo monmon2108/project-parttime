@@ -9,6 +9,12 @@
         <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
         <link href="https://cdn.muicss.com/mui-0.9.6/css/mui.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.muicss.com/mui-0.9.6/js/mui.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
         <style>
 
 
@@ -25,10 +31,19 @@
           .mui-select{
             width: 500px;
           }
+
+          .md-datepicker{
+            position: relative;
+            width: 500px;
+            left: 5px;
+
+          }
+
+
         </style>
     </head>
 
-    <body>
+    <body ng-app="BlankApp" ng-cloak>
       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
           <div class="mdl-layout__header-row">
@@ -94,7 +109,7 @@
                 <li class="mdl-list__item">
                   <span class="mdl-list__item-primary-content">
                     <i class="material-icons mdl-list__item-icon">local_see</i>
-                    <img src="">
+                    <img src="ic_person_white_48dp.png" alt="Image" style="width:128px;height:128px;background-color:grey;margin-right:15px;">
                     <button class="mdl-button mdl-js-button mdl-button--raised ">Button</button>
                   </span>
                 </li>
@@ -131,12 +146,12 @@
 
                 <li class="mdl-list__item">
                   <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-icon">insert_invitation</i>
-                    <div class="mdl-textfield mdl-js-textfield width-txtfield">
-                      <input type="text" class="mdl-textfield__input" id="address"/>
-                      <label class="mdl-textfield__label" for="address">Date</label>
+                    <script type="text/javascript">
+                      angular.module('BlankApp', ['ngMaterial']);
+                    </script>
+                    <div flex-gt-xs>
+                      <md-datepicker ng-model="myDate" md-placeholder="Date" ></md-datepicker>
                     </div>
-
                   </span>
                 </li>
 
@@ -235,4 +250,6 @@
         </main>
 
       </div>
+
+
     </body>
